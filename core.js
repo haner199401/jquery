@@ -25,6 +25,7 @@ var
 	core_hasOwn = Object.prototype.hasOwnProperty,
 	core_trim = String.prototype.trim,
 
+	
 	//注点1，这个对象准备被window.jQuery外放为jQuery全局变量，同时便于其它功能在其上扩展（如DOM，Event等）
 	jQuery = function( selector, context ) {
 		//注点1中调用时，自动构造jQuery对象，而这个jQuery对象，是jQuery.fn.init的一个实例化
